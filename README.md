@@ -4,10 +4,11 @@ This repository contains the waveform generating framework 'awgsomefi' that is u
 
 Please note that this code was not specifically prepared for use by others. There is no tutorial, documentation, or other goodies to make this more polished. This is primarily intended as additional proof of our work and to encourage collaborations.
 
-This code is released under the license terms of the Apache 2.0 license (see LICENSE). Copyright: 2023-2024 by Vincent Immler.
+This code is released under the license terms of the Apache 2.0 license (see [LICENSE](https://github.com/hsrlab/awgsomefi/blob/main/LICENSE)).
+Copyright: 2023-2024 by Vincent Immler.
 
 ## Setup and Installation
-This repository is tested only on Linux (Ubuntu 22 LTS) so we will be using `bash` commands. It assumes access to an STM32F0308DISCOVERY board as the debug protocol for Renesas 78K0R chips was implemented using this board.
+This repository is tested only on Linux (Ubuntu 22 LTS) so we will be using `bash` commands. It assumes access to an [STM32F0308DISCOVERY](https://www.st.com/en/evaluation-tools/32f0308discovery.html) board as the debug protocol for Renesas 78K0R chips was implemented using this board.
 
 1. Make sure you have access to the [fmpi-stm32f0](https://github.com/decryptofy/debug-renesas-fmpi-stm32f0) repository and have SSH setup to clone from it.
 
