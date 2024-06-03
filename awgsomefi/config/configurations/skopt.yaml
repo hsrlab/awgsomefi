@@ -1,0 +1,21 @@
+# Configuration for the skopt waveform finding
+
+Waveform:
+    point_count: 5
+    segment_length:
+      lower: 1
+      upper: 300
+    time_offset: 
+      lower: -300
+      upper: 300
+
+    # Set to huge number to "disable" slew  limit
+    slew_limit: 1.0 # V/100ns
+
+Optimization:
+    initial_points: 20
+    total_points: 100
+    glitches_per_sample: 20
+    # Model either 'gbrt' or 'gp'
+    model: "gp"
+    acquisition: "gp_hedge"

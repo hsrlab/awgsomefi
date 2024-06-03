@@ -1,0 +1,15 @@
+lab_active: "kelley"
+
+kelley:
+    PSU:
+        model: "RigolDP831"
+        ip: "192.168.0.2"
+    AWG:
+        enabled: [] # Don't enable anything by default
+        model: "SiglentSDG6022"
+        ip: "192.168.0.3"
+
+    Scope:
+        model: "SiglentSDS2104"
+        ip: "192.168.0.4"
+        enabled: [3] # Only the first channel used extraction

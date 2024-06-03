@@ -1,0 +1,17 @@
+Waveform:
+    point_count:
+      lower: 4
+      upper: 8
+    segment_length:
+      lower: 1
+      upper: 200
+    time_offset: 
+      lower: -300
+      upper: 300
+    
+    # Set to huge number to "disable" slew  limit
+    slew_limit: 1.0 # V/100ns
+
+Optimization:
+    initial_points: 300
+    total_points: 1200

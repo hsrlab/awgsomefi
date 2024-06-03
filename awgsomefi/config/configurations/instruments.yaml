@@ -1,0 +1,33 @@
+# Logical configurations of the devices (independent of device used)
+
+AWG:
+  - channel_id: 1
+    opamp_gain: 5
+    load: 50
+
+    voltage:
+      low: 0.0
+      high: 2.0
+      norm: 1.8
+
+  - channel_id: 2
+    load: "hiZ"
+
+    voltage:
+      low: 0
+      high: 3
+      norm: 3
+
+# Supply currently NOT setup automatically
+supply:
+    mode: "CV" # Options: CV, CC, UR. Only CV supported at the time
+    channels:
+        1:
+            voltage: 3.3 # V
+            current_limit: 0.1 # A
+        2:
+            voltage: 20 # V
+            current_limit: 0.2 # A
+        3:
+            voltage: -20 # V
+            current_limit: 0.2 # A
